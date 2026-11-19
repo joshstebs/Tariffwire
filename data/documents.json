@@ -1,0 +1,475 @@
+{
+  "retrieved_at": "2026-11-13",
+  "live_tariff_integration": false,
+  "note": "Each record is a pointer to a public page read on the retrieved_at date, plus a short summary of what that page said. Summaries are not substitutes for the instruments.",
+  "documents": [
+    {
+      "id": "customs-tariff-act",
+      "title": "Customs Tariff (S.C. 1997, c. 36)",
+      "instrument": "Federal statute",
+      "publisher": "Department of Justice, Justice Laws",
+      "jurisdiction": "Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/C-54.011/index.html",
+      "published": "1997-12-08",
+      "revised": "2026-09-01",
+      "effective": null,
+      "date_labels": {
+        "published": "Assent citation as shown on the consolidated Act (S.C. 1997, c. 36). This record does not restate the coming-into-force history.",
+        "revised": "Justice Laws label: last amended on 2026-09-01.",
+        "consolidation_currency": "Justice Laws label: Act current to 2026-10-19. That is a consolidation currency date, not the effective date of every provision."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["customs tariff", "statute", "justice laws", "act"],
+      "summary": "The consolidated Customs Tariff on Justice Laws is the statute. On 2026-11-13 the page said the Act is current to 2026-10-19 and was last amended on 2026-09-01. The amendment list shown there begins with 2026, c. 7 on 2026-09-01. This record does not copy the Act and does not treat the consolidation currency date as the effective date of any particular tariff line.",
+      "limitation": "A Justice Laws consolidation is not a ruling about a shipment. The departmental consolidation of the schedule, published by the CBSA, is a separate convenience text.",
+      "not_authoritative_for": ["a goods classification", "a duty rate for a shipment"],
+      "quotations": [
+        "Act current to 2026-10-19 and last amended on 2026-09-01."
+      ]
+    },
+    {
+      "id": "cbsa-tariff-2026-editions",
+      "title": "CBSA Customs Tariff 2026 edition menu",
+      "instrument": "Departmental consolidation publication page",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": "2026-09-01",
+      "date_labels": {
+        "effective": "The page's current block is headed T2026-2, effective date 2026-09-01. Earlier blocks remain listed."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["T2026-2", "T2026-1", "T2026", "customs tariff", "edition"],
+      "summary": "On 2026-11-13 this page listed three 2026 files: T2026-2 effective 2026-09-01, T2026-1 effective 2026-08-06, and T2026 effective 2026-01-01. It said the files are updated at least once a year, or whenever necessary, and that the CBSA issues customs notices when there are amendments. It offered chapter HTML, a complete PDF, and a Microsoft Access zip. It did not offer a public developer API. There is no live tariff integration in TariffWire.",
+      "limitation": "The CBSA page is the publication point for the departmental consolidation. A cover examined on a different 2026 PDF (01-99-2026-eng.pdf, labelled T2026(E)) warns that the departmental consolidation is prepared for convenience of reference only and has no official sanction. That warning was not re-read inside the 59.6 MB T2026-2 PDF.",
+      "not_authoritative_for": ["a calculated amount payable", "proof that a particular tariff item is unchanged today"],
+      "quotations": [
+        "They are updated at least once a year, or whenever necessary. The CBSA issues customs notices to the importing community whenever there are amendments.",
+        "T2026-2 Effective date: 2026-09-01"
+      ]
+    },
+    {
+      "id": "cbsa-t2026-2-chapter-index",
+      "title": "Customs Tariff chapter-by-chapter (T2026-2)",
+      "instrument": "Departmental consolidation chapter index",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-2-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": "2026-09-01",
+      "date_labels": {
+        "effective": "Chapter rows on this index showed effective date 2026-09-01. The General Rules row showed 2026-01-01. The list of countries row showed 2026-09-01."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["chapter", "harmonized system", "index", "T2026-2"],
+      "summary": "This is the HTML index TariffWire parsed for section and chapter titles. The stored catalogue keeps those titles, the printed effective dates, and the HTML and PDF links. It does not keep headings, tariff items, or duty rates. Chapter 77's index title says it is reserved for possible future use in the Harmonized System.",
+      "limitation": "A chapter title is not a classification. Open the linked chapter before relying on anything in it, and confirm the edition is still the one in force.",
+      "not_authoritative_for": ["tariff item text", "duty rates", "legal notes"],
+      "quotations": []
+    },
+    {
+      "id": "cbsa-classification-guide",
+      "title": "Guide to tariff classification for Canadian imports",
+      "instrument": "CBSA guide",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/guide/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The overview page that was read did not print an effective date for the guide."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["classification", "guide", "harmonized system", "general rules"],
+      "summary": "The CBSA guide explains the Harmonized System, the Customs Tariff, classification numbers, legal notes, and the General Rules for importers. The overview says the guide does not replace the legislation, the regulations, or D-memoranda, and that examples are for information purposes only.",
+      "limitation": "TariffWire links to the guide. It does not apply the General Rules to a user's goods.",
+      "not_authoritative_for": ["a binding classification"],
+      "quotations": [
+        "This guide does not replace the legislation or the regulations, or any policy and procedures in the Canada Border Services Agency's (CBSA) departmental memoranda (D-memoranda) series of publications. Examples of the classification of goods are for information purposes only."
+      ]
+    },
+    {
+      "id": "cbsa-classification-numbering",
+      "title": "How to read tariff classification numbers",
+      "instrument": "CBSA guide",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/guide/read-lire-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The numbering page that was read did not print an effective date."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["10-digit", "heading", "subheading", "tariff item", "statistical suffix"],
+      "summary": "The guide says a complete classification number has 10 digits. In its example 9507.90.10.00, 9507 is the international heading, 9507.90 is the international subheading, 9507.90.10 is the Canadian tariff item, and 9507.90.10.00 adds the Canadian statistical suffix. It also says the first two digits indicate the chapter. Those are the guide's illustrations of the numbering system, not a finding that any particular good is classified there, and not a duty rate.",
+      "limitation": "Knowing how a number is built does not establish that a number is correct or in force.",
+      "not_authoritative_for": ["the classification of a good", "a duty rate"],
+      "quotations": [
+        "The first 2 digits indicate the chapter in which the heading is located.",
+        "All 10 digits combine to form the complete classification number."
+      ]
+    },
+    {
+      "id": "cbsa-advance-rulings",
+      "title": "Rulings for tariff classification, valuation, origin, and marking",
+      "instrument": "CBSA program description",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/import/ar-da/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The overview describes validity conditions. It does not give one expiry date for every ruling."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["advance ruling", "national customs ruling", "binding", "classification"],
+      "summary": "The CBSA says advance rulings for tariff classification assign a 10-digit number and explain why, and that they provide a binding decision between the CBSA and the person to whom the decision is issued. Rulings can also be used by persons importing the specified goods from the ruling recipient when that recipient is an exporter or producer outside Canada. The page says a ruling remains valid only while the facts and circumstances remain as presented, the conditions in the ruling are met, the ruling has not been modified or revoked, and the applicable legislation has not changed. National customs rulings are described separately for valuation, non-FTA origin, and marking.",
+      "limitation": "A TariffWire packet is not an advance ruling and cannot be used as one. Published rulings, where the recipient consented, still have to be read on the CBSA site.",
+      "not_authoritative_for": ["a ruling for someone who did not receive it", "a rate"],
+      "quotations": [
+        "They also provide a binding decision between the CBSA and the person to whom the decision is issued."
+      ]
+    },
+    {
+      "id": "cbsa-d11-11-3",
+      "title": "Memorandum D11-11-3: Advance Rulings for Tariff Classification",
+      "instrument": "CBSA D-memorandum",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-11-3-eng.html",
+      "published": "2024-10-21",
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "published": "The memorandum is dated Ottawa, October 21, 2024."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["D11-11-3", "advance ruling", "Customs Act", "120 days"],
+      "summary": "D11-11-3 describes advance rulings for tariff classification under paragraph 43.1(1)(c) of the Customs Act. It quotes section 3 of the Tariff Classification Advance Ruling Regulations: an application shall be made not less than 120 days before the proposed date of importation. It says the CBSA set a 120-day service standard when sufficient information has been received, and that an advance ruling is optional and not required to import goods. The memorandum refers to the CARM Client Portal as one channel. TariffWire does not connect to CARM.",
+      "limitation": "This is a pointer to the memorandum. Application procedure, grounds for declining a ruling, and appeal rights have to be read there.",
+      "not_authoritative_for": ["whether the CBSA will issue a ruling", "the classification that a ruling would give"],
+      "quotations": [
+        "This memorandum outlines the Canada Border Services Agency (CBSA)’s program for issuing advance rulings for tariff classification under paragraph 43.1(1)(c) of the Customs Act (the Act).",
+        "an application for an advance ruling shall be made not less than 120 days before the proposed date of importation of the goods."
+      ]
+    },
+    {
+      "id": "cbsa-customs-notices",
+      "title": "CBSA Customs Notices",
+      "instrument": "Notice index",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The index says notices are not an ongoing reference. Individual notices carry their own dates."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["customs notice", "amendment", "announcement"],
+      "summary": "The CBSA says Customs Notices inform clients about proposed changes to customs programs and procedures and are not intended as an ongoing reference. Notices are kept online for the current and previous year, and longer if they have a regulatory impact and are awaiting regulatory approval. Ongoing material is incorporated into D-memoranda. The index read on 2026-11-13 included Customs Notice 26-23, revised 2026-10-23, and Customs Notice 26-22, revised 2026-09-16.",
+      "limitation": "A notice can be cancelled, revised, or superseded. The index, not this summary, is the list to re-read.",
+      "not_authoritative_for": ["the current legal text after a notice has been overtaken by an order or a D-memorandum"],
+      "quotations": [
+        "Customs Notices are issued to inform clients about proposed changes to customs programs and procedures. They are not intended as an ongoing reference."
+      ]
+    },
+    {
+      "id": "cn-26-23",
+      "title": "Customs Notice 26-23: United States Surtax Order (2026)",
+      "instrument": "Customs notice",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html",
+      "published": "2026-09-07",
+      "revised": "2026-10-23",
+      "effective": "2026-09-08",
+      "date_labels": {
+        "published": "The notice is dated Ottawa, September 7, 2026.",
+        "revised": "The notice says Updated: October 23, 2026 (see paragraph 7).",
+        "effective": "The notice says the surtax provisions it describes are effective September 8, 2026, for certain goods originating in the United States."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["surtax", "United States", "SOR/2026-186", "counter tariff"],
+      "summary": "Customs Notice 26-23 describes administration of the United States Surtax Order (2026). It says that, effective September 8, 2026, certain goods imported into Canada and originating in the United States are subject to a surtax of either 15%, 25% or 50% of the value for duty, as applicable, in accordance with the Order, and that the schedules to the Order contain the list of goods and the applicable rate. It says value for duty is determined under sections 47 to 55 of the Customs Act. It also describes origin, exceptions, and non-cumulative treatment with the Steel Derivative Goods Surtax Order. Those conditions are in the notice. TariffWire does not decide whether a good is listed.",
+      "limitation": "The notice is not an ongoing reference. The Order and its schedules control. The percentages above are the notice's description of the rates the Order uses; they are not a rate for any good a user describes.",
+      "not_authoritative_for": ["whether a particular good is listed", "which schedule rate applies", "a customs duty rate under the Tariff"],
+      "quotations": [
+        "Effective September 8, 2026, certain goods imported into Canada and originating in the U.S. are subject to a surtax of either 15%, 25% or 50% of the value for duty, as applicable, in accordance with the United States Surtax Order (2026). The value for duty is determined in accordance with sections 47 to 55 of the Customs Act. The Schedules to the United States Surtax Order (2026) contain a complete list of goods subject to the surtax and the applicable surtax rate."
+      ]
+    },
+    {
+      "id": "cn-26-22",
+      "title": "Customs Notice 26-22: Amendment to the Departmental Consolidation of the Customs Tariff — United Kingdom",
+      "instrument": "Customs notice",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-22-eng.html",
+      "published": "2026-09-01",
+      "revised": "2026-09-16",
+      "effective": "2026-09-01",
+      "date_labels": {
+        "published": "The notice is dated Ottawa, September 1, 2026.",
+        "revised": "The notice says Updated: September 16, 2026.",
+        "effective": "The notice says eligible United Kingdom goods are entitled to CPUKT tariff treatment as of September 1, 2026."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["United Kingdom", "CPTPP", "CPUKT", "T2026-2", "tariff treatment"],
+      "summary": "Customs Notice 26-22 says the CPTPP enters into force for the United Kingdom on September 1, 2026, and that eligible goods from the United Kingdom are entitled to the Comprehensive and Progressive United Kingdom Tariff (CPUKT), code 35, as of that date. It says T2026-2 reflects that treatment for the United Kingdom, the Channel Islands, and the Isle of Man, across chapters 1 to 99. Paragraph 4 said T2026-2 was being published exceptionally in HTML and Access only and that the PDF would follow. Paragraph 5 said T2026-2 was available in all formats as of September 16, 2026. The 2026 tariff menu, read on 2026-11-13, listed a T2026-2 PDF. This record does not copy any CPUKT rate.",
+      "limitation": "A customs notice is not a ruling that particular goods qualify. Preferential treatment still depends on the tariff treatment, the rules of origin, and proof of origin. See the conflict with the Global Affairs catalogue.",
+      "not_authoritative_for": ["whether goods originate", "a CPUKT duty rate"],
+      "conflicts": [
+        {
+          "with": "gac-agreements-catalogue",
+          "topic": "Whether the CPTPP is in force for the United Kingdom",
+          "detail": "This notice says the CPTPP enters into force for the United Kingdom on 2026-09-01. The Global Affairs agreements catalogue, read on 2026-11-13, still said the CPTPP country grouping was not yet in force for the United Kingdom."
+        }
+      ],
+      "quotations": [
+        "The Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) enters into force for the United-Kingdom on September 1, 2026.",
+        "This tariff treatment is the Comprehensive and Progressive United Kingdom Tariff (CPUKT) – Code 35."
+      ]
+    },
+    {
+      "id": "sor-2026-186",
+      "title": "United States Surtax Order (2026) (SOR/2026-186)",
+      "instrument": "Regulation under the Customs Tariff",
+      "publisher": "Department of Justice, Justice Laws",
+      "jurisdiction": "Canada",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2026-186/index.html",
+      "published": null,
+      "revised": "2026-09-08",
+      "effective": null,
+      "date_labels": {
+        "revised": "Justice Laws label: last amended on 2026-09-08.",
+        "consolidation_currency": "Justice Laws label: Regulations are current to 2026-10-19.",
+        "enabling_act": "The page names the Customs Tariff as the enabling Act."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["SOR/2026-186", "surtax", "United States", "order"],
+      "summary": "Justice Laws lists the United States Surtax Order (2026) as SOR/2026-186, enabled by the Customs Tariff. On 2026-11-13 the consolidation page said the regulations are current to 2026-10-19 and were last amended on 2026-09-08. TariffWire did not copy the schedules.",
+      "limitation": "The schedules, not this record, say which goods and rates are covered. Customs Notice 26-23 is administrative guidance about the Order and is not itself the Order.",
+      "not_authoritative_for": ["a line-level rate stored in this project"],
+      "quotations": [
+        "United States Surtax Order (2026) (SOR/2026-186)",
+        "Regulations are current to 2026-10-19 and last amended on 2026-09-08."
+      ]
+    },
+    {
+      "id": "finance-us-counter-tariffs",
+      "title": "Department of Finance list of U.S. products subject to counter tariffs",
+      "instrument": "Departmental information page",
+      "publisher": "Department of Finance Canada",
+      "jurisdiction": "Canada",
+      "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs/complete-list-us-products-subject-to-counter-tariffs.html",
+      "published": null,
+      "revised": "2026-08-26",
+      "effective": "2026-09-08",
+      "date_labels": {
+        "revised": "The page says the list was updated as of August 26, 2026.",
+        "effective": "The page says the current list took effect on September 8, 2026, at 12:01 a.m."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["counter tariff", "United States", "Finance", "surtax"],
+      "summary": "Finance Canada publishes a page of U.S. products subject to counter tariffs. The page read on 2026-11-13 said the current list took effect on September 8, 2026, that the list was updated as of August 26, 2026, and that the page remains the authoritative source for that complete list, including tariff items, effective dates, and rates. The same page says the consolidated list is prepared for information purposes only and has no official sanction, that the HS headings and descriptions are illustrative, and that the tariff-item list should be read with the Schedule to the Customs Tariff. TariffWire does not copy the table.",
+      "limitation": "Use the page and SOR/2026-186 together. Do not treat a sentence in this catalogue as the rate for a tariff item.",
+      "not_authoritative_for": ["a rate detached from the Finance table and the Order"],
+      "quotations": [
+        "This page remains the authoritative source for the complete list of U.S. products subject to Canadian counter tariffs, including tariff items, effective dates, and rates.",
+        "The consolidated list below is prepared for information purposes only and has no official sanction.",
+        "List updated as of August 26, 2026"
+      ]
+    },
+    {
+      "id": "sima-measures-in-force",
+      "title": "SIMA measures in force",
+      "instrument": "CBSA list",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The page says the list is updated where applicable to reflect the current status of duty liability. It did not print one effective date for the whole list."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["SIMA", "anti-dumping", "countervailing", "measures in force"],
+      "summary": "The CBSA measures-in-force page is a list of goods subject to anti-dumping or countervailing measures, or price undertakings, under the Special Import Measures Act. The page says that if the list and a SIMA finding or order disagree, the finding or order takes precedence. TariffWire does not copy the list and does not decide whether a good is subject to SIMA duty.",
+      "limitation": "Duty liability follows the finding or order. The list is a finding aid maintained by the CBSA.",
+      "not_authoritative_for": ["SIMA duty on a shipment"],
+      "quotations": [
+        "If there is any discrepancy between the SIMA finding or order and the information in this Measures in force list, the finding or order takes precedence."
+      ]
+    },
+    {
+      "id": "cbsa-d-memoranda",
+      "title": "CBSA departmental memoranda",
+      "instrument": "Publication index",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/menu-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "Each D-memorandum has its own date. The series index does not give one effective date."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["D-memorandum", "D-memo", "policy"],
+      "summary": "CBSA departmental memoranda outline the legislation, regulations, policies, and procedures the agency uses, and the agency says it reviews them as policy and legislation change. Series named on the index include D10 tariff classification of commodities, D11 general tariff information, D13 valuation, D14 Special Import Measures Act, D16 surtax, D19 acts and regulations of other government departments, and D20 exportations.",
+      "limitation": "The index is not the text of any memorandum. A cancelled memorandum is not current guidance.",
+      "not_authoritative_for": ["the contents of a D-memorandum that was not opened"],
+      "quotations": []
+    },
+    {
+      "id": "cbsa-d10-index",
+      "title": "D10: Tariff classification — commodities",
+      "instrument": "D-memorandum series index",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d10-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "Only the series heading was read. Individual commodity memoranda were not opened for this record."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["D10", "commodity", "classification"],
+      "summary": "The D10 series index is titled tariff classification of commodities. This record confirms the series page was available on 2026-11-13. It does not summarize individual commodity memoranda, because those pages were not read into this catalogue.",
+      "limitation": "Do not infer a commodity classification from the existence of the D10 series.",
+      "not_authoritative_for": ["any commodity classification"],
+      "quotations": []
+    },
+    {
+      "id": "gac-controls",
+      "title": "Export and import controls",
+      "instrument": "Program page",
+      "publisher": "Global Affairs Canada",
+      "jurisdiction": "Canada",
+      "url": "https://international.canada.ca/en/global-affairs/services/controls",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The page that was read did not print a single effective date for the control lists."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["export control", "import control", "permit", "Global Affairs"],
+      "summary": "Global Affairs Canada publishes the public entry point for export and import controls. The page read on 2026-11-13 said to find information about exports and imports of controlled products, notices to importers and exporters, control systems, and guides and handbooks. TariffWire does not state whether a good needs a permit.",
+      "limitation": "Permit requirements are in the control lists, notices, and the permit systems. This record is only a pointer.",
+      "not_authoritative_for": ["a permit determination"],
+      "quotations": [
+        "Find information about exports and imports of controlled products. Get notices to importers and exporters, access export and import control systems and consult key resources, such as printable forms, guides and handbooks."
+      ]
+    },
+    {
+      "id": "gac-agreements-catalogue",
+      "title": "Canada’s international trade and investment agreements",
+      "instrument": "Departmental catalogue",
+      "publisher": "Global Affairs Canada",
+      "jurisdiction": "Canada",
+      "url": "https://international.canada.ca/en/services/business/trade/agreements-negotiations/investment-agreements",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "The catalogue gives a status and an in-force date on each agreement row. Those dates are catalogue statements, not a preference ruling."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["trade agreement", "CPTPP", "CUSMA", "CETA", "treaty"],
+      "summary": "Global Affairs Canada maintains a searchable catalogue of trade and investment agreements. The page says treaty texts there are for information purposes only and that official treaty texts are in the Canada Treaty Series. On 2026-11-13 the CPTPP row said the agreement was in force as of 2018-12-30 and the country-grouping text still said it was not yet in force for the United Kingdom. The Canada-United Kingdom Trade Continuity Agreement row said it was in force as of 2021-04-01. TariffWire does not copy the rest of the catalogue and does not decide preferential entitlement.",
+      "limitation": "Catalogue status can lag a customs notice or an order. See Customs Notice 26-22. Preferential duty treatment is not decided by this catalogue entry.",
+      "not_authoritative_for": ["origin", "a preference rate"],
+      "conflicts": [
+        {
+          "with": "cn-26-22",
+          "topic": "Whether the CPTPP is in force for the United Kingdom",
+          "detail": "This catalogue still said the CPTPP was not yet in force for the United Kingdom. Customs Notice 26-22 says it enters into force for the United Kingdom on 2026-09-01."
+        }
+      ],
+      "quotations": [
+        "Treaty texts are for information purposes only. Find the official texts of treaties in the Canada Treaty Series."
+      ]
+    },
+    {
+      "id": "canada-gazette",
+      "title": "Canada Gazette",
+      "instrument": "Official publication site",
+      "publisher": "Government of Canada",
+      "jurisdiction": "Canada",
+      "url": "https://gazette.gc.ca/",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "Each Gazette instrument has its own registration and in-force text."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["Canada Gazette", "SOR", "order", "amendment"],
+      "summary": "gazette.gc.ca is the publication site for the Canada Gazette. Orders that amend the Customs Tariff schedule are published as regulations. TariffWire did not ingest a Gazette feed. Read the instrument, then the Justice Laws consolidation, rather than relying on a secondary description.",
+      "limitation": "The homepage was confirmed reachable on 2026-11-13. No Gazette issue was copied into this catalogue.",
+      "not_authoritative_for": ["a specific amendment that was not opened"],
+      "quotations": []
+    },
+    {
+      "id": "citt",
+      "title": "Canadian International Trade Tribunal",
+      "instrument": "Tribunal website",
+      "publisher": "Canadian International Trade Tribunal",
+      "jurisdiction": "Canada",
+      "url": "https://www.citt-tcce.gc.ca/en",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "effective": "Decisions and orders on the tribunal site carry their own dates. None were copied here."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["CITT", "tribunal", "appeal", "trade remedy"],
+      "summary": "The Canadian International Trade Tribunal's public site was reachable on 2026-11-13. D11-11-3 lists an appeal to the Tribunal among the topics in the advance-ruling memorandum. SIMA findings and orders, where the CBSA list itself says they take precedence over the measures-in-force list, are read from the finding or order rather than from this catalogue. Headlines on the tribunal homepage were not stored, because they change and were not verified as a legal status.",
+      "limitation": "This record does not state the result of any inquiry, appeal, or expiry review.",
+      "not_authoritative_for": ["the outcome of a case"],
+      "quotations": []
+    },
+    {
+      "id": "bis-contact",
+      "title": "CBSA Border Information Service",
+      "instrument": "Contact page",
+      "publisher": "Canada Border Services Agency",
+      "jurisdiction": "Canada",
+      "url": "https://www.cbsa-asfc.gc.ca/contact/bis-sif-eng.html",
+      "published": null,
+      "revised": null,
+      "effective": null,
+      "date_labels": {
+        "service_hours": "The page read on 2026-11-13 said live agents are available Monday to Friday, 8 am to 4 pm local time in Canada and the United States, and closed on federal statutory holidays. It also said inquiry volume was higher than normal."
+      },
+      "retrieved_at": "2026-11-13",
+      "keywords": ["Border Information Service", "BIS", "contact", "1-800-461-9999"],
+      "summary": "The BIS contact page is the public place to confirm how to reach the CBSA with a general commercial question, including rulings. On 2026-11-13 it listed toll-free 1-800-461-9999 within Canada and the United States, and TTY 1-866-335-3237. Those two numbers also appear on Customs Notice 26-22. The outside-Canada number does not match that notice, so it is not repeated here as a single current number.",
+      "limitation": "Hours and numbers are taken from the page on the retrieval date. Scams can spoof caller ID. Use the contact page rather than a number forwarded from a third party.",
+      "not_authoritative_for": ["a classification given by telephone as if it were a ruling"],
+      "conflicts": [
+        {
+          "with": "cn-26-22",
+          "topic": "Outside-Canada telephone number",
+          "detail": "Customs Notice 26-22 prints 1-204-983-3550 or 1-506-636-5064 for calls outside Canada and the United States. The BIS contact page retrieved on 2026-11-13 prints 1-204-983-3500 and does not print the 506 number. Use the contact page."
+        }
+      ],
+      "quotations": [
+        "Toll-free 1-800-461-9999",
+        "TTY (for those with hearing or speech impairments) 1-866-335-3237"
+      ]
+    }
+  ]
+}

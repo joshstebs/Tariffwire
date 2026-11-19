@@ -1,0 +1,271 @@
+{
+  "checked_at": "2026-11-13T00:23:47.967085+00:00",
+  "live_tariff_integration": false,
+  "meaning": "On-demand fingerprint of public web pages. This is not a feed of tariff amendments and it is not a connection to CBSA accounting systems.",
+  "baseline_checked_at": null,
+  "observation_count": 14,
+  "failure_count": 0,
+  "changed_count": 0,
+  "observations": [
+    {
+      "id": "cbsa-tariff-2026-menu",
+      "title": "CBSA Customs Tariff 2026 menu",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/menu-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/menu-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 17309,
+      "sha256": "b932d532b63105534152800e765d4f11ff5e003e05a79e3db376f27656059e23",
+      "markers": {
+        "edition_token": [
+          "T2026-2",
+          "T2026-1",
+          "T2026"
+        ],
+        "effective_date": [
+          "Effective date: 2026-09-01",
+          "Effective date: 2026-08-06",
+          "Effective date: 2026-01-01"
+        ]
+      },
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cbsa-t2026-2-index",
+      "title": "CBSA Customs Tariff chapter index T2026-2",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-2-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-2-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 63820,
+      "sha256": "c7a625a95886158f78564f5e3feced6a0400c76132b9d2e8b8a7c9fb171dd0f3",
+      "markers": {
+        "edition_token": [
+          "T2026-2"
+        ]
+      },
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cbsa-tariff-home",
+      "title": "CBSA Canadian customs tariff home",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/menu-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/menu-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 17341,
+      "sha256": "9b76d9aa040657da0e1492789329520cf38f1af8901424984b0edf17992cc272",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "justice-customs-tariff",
+      "title": "Justice Laws Customs Tariff",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/C-54.011/index.html",
+      "final_url": "https://laws-lois.justice.gc.ca/eng/acts/C-54.011/index.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 86579,
+      "sha256": "b0fdf6276727131524181fc85a94cbe35f4f0ca3c0706af54a071d80a5d49e9d",
+      "markers": {
+        "act_current_to": [
+          "Act current to 2026-10-19"
+        ],
+        "last_amended": [
+          "last amended on 2026-09-01"
+        ],
+        "sor_number": [
+          "SOR/2007-151",
+          "SOR/2004-96",
+          "SOR/2012-123",
+          "SOR/2010-130",
+          "SOR/2005-263",
+          "SOR/2008-306",
+          "SOR/2014-270",
+          "SOR/2001-251",
+          "SOR/2020-286",
+          "SOR/2002-66",
+          "SOR/2003-72",
+          "SOR/2021-144"
+        ]
+      },
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "justice-sor-2026-186",
+      "title": "Justice Laws United States Surtax Order (2026)",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2026-186/index.html",
+      "final_url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2026-186/index.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html",
+      "bytes": 16972,
+      "sha256": "cf2f30f4443ea25448b32bba9878dddd898d1aaf4f060a2337d4ed1b75b9c4e9",
+      "markers": {
+        "last_amended": [
+          "last amended on 2026-09-08"
+        ],
+        "regulations_current_to": [
+          "Regulations are current to 2026-10-19"
+        ]
+      },
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cbsa-customs-notices",
+      "title": "CBSA Customs Notices index",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/menu-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/menu-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 116415,
+      "sha256": "72d8ece55bc40f1450aa09abfce600120c79e9dbc4c96ed69e3d24928ba6ce2a",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cn-26-23",
+      "title": "Customs Notice 26-23",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 45435,
+      "sha256": "d8339339edc9e0e30b1f31b79528d5c89bff4b7de256f87b13616139f0ebefd7",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cn-26-22",
+      "title": "Customs Notice 26-22",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-22-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-22-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 16036,
+      "sha256": "3102f0b4697f2a921d4178fc639d9441435a82e9a78fc4dadcee46f0e50ad668",
+      "markers": {
+        "edition_token": [
+          "T2026-2"
+        ],
+        "cpukt": [
+          "CPUKT"
+        ]
+      },
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "cbsa-rulings",
+      "title": "CBSA rulings overview",
+      "url": "https://www.cbsa-asfc.gc.ca/import/ar-da/menu-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/import/ar-da/menu-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 18085,
+      "sha256": "bf5896c6856f6b404fc2f453e53682a88764b4075a692deef8b0e21442c72866",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "d11-11-3",
+      "title": "Memorandum D11-11-3",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-11-3-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-11-3-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 86197,
+      "sha256": "e963e0cb6de5bf252ad9c082284e5d2000b89b535f599f67aa7b0f78708b0074",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "sima-measures",
+      "title": "CBSA SIMA measures in force",
+      "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 119149,
+      "sha256": "a5fc4f3a91916d0aea8a94619fec6050fc5ae97526ca0e6b82631a53bd36d2e3",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "finance-counter-tariffs",
+      "title": "Finance Canada U.S. counter-tariff list",
+      "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs/complete-list-us-products-subject-to-counter-tariffs.html",
+      "final_url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs/complete-list-us-products-subject-to-counter-tariffs.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 1594905,
+      "sha256": "8a08c62f46c45f9c034d4f70f41eb3b7c61aba808e0f1d77e9e73b0cfac749ff",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "gac-agreements",
+      "title": "Global Affairs trade agreements catalogue",
+      "url": "https://international.canada.ca/en/services/business/trade/agreements-negotiations/investment-agreements",
+      "final_url": "https://international.canada.ca/en/services/business/trade/agreements-negotiations/investment-agreements",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 160809,
+      "sha256": "3ed08576cac355b27915e189c7b8af29b492de009a61581c09af4eea68e6811a",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    },
+    {
+      "id": "bis-contact",
+      "title": "CBSA Border Information Service contact page",
+      "url": "https://www.cbsa-asfc.gc.ca/contact/bis-sif-eng.html",
+      "final_url": "https://www.cbsa-asfc.gc.ca/contact/bis-sif-eng.html",
+      "ok": true,
+      "http_status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 26643,
+      "sha256": "a54d1677c0ddc961ec48520b39d109ac67279d9b49acbd27a6b065fb62b95d99",
+      "markers": {},
+      "error": null,
+      "interpretation": "SHA-256 covers the HTTP body. A change means those bytes changed. It does not identify a duty-rate amendment.",
+      "change": "baseline_created"
+    }
+  ]
+}

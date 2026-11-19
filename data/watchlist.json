@@ -1,0 +1,75 @@
+{
+  "purpose": "Public pages fingerprinted on demand. No authenticated system is on this list.",
+  "entries": [
+    {
+      "id": "cbsa-tariff-2026-menu",
+      "title": "CBSA Customs Tariff 2026 menu",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/menu-eng.html"
+    },
+    {
+      "id": "cbsa-t2026-2-index",
+      "title": "CBSA Customs Tariff chapter index T2026-2",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/2026/html/tblmod-2-eng.html"
+    },
+    {
+      "id": "cbsa-tariff-home",
+      "title": "CBSA Canadian customs tariff home",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/menu-eng.html"
+    },
+    {
+      "id": "justice-customs-tariff",
+      "title": "Justice Laws Customs Tariff",
+      "url": "https://laws-lois.justice.gc.ca/eng/acts/C-54.011/index.html"
+    },
+    {
+      "id": "justice-sor-2026-186",
+      "title": "Justice Laws United States Surtax Order (2026)",
+      "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2026-186/index.html"
+    },
+    {
+      "id": "cbsa-customs-notices",
+      "title": "CBSA Customs Notices index",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/menu-eng.html"
+    },
+    {
+      "id": "cn-26-23",
+      "title": "Customs Notice 26-23",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html"
+    },
+    {
+      "id": "cn-26-22",
+      "title": "Customs Notice 26-22",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-22-eng.html"
+    },
+    {
+      "id": "cbsa-rulings",
+      "title": "CBSA rulings overview",
+      "url": "https://www.cbsa-asfc.gc.ca/import/ar-da/menu-eng.html"
+    },
+    {
+      "id": "d11-11-3",
+      "title": "Memorandum D11-11-3",
+      "url": "https://www.cbsa-asfc.gc.ca/publications/dm-md/d11/d11-11-3-eng.html"
+    },
+    {
+      "id": "sima-measures",
+      "title": "CBSA SIMA measures in force",
+      "url": "https://www.cbsa-asfc.gc.ca/sima-lmsi/mif-mev/menu-eng.html"
+    },
+    {
+      "id": "finance-counter-tariffs",
+      "title": "Finance Canada U.S. counter-tariff list",
+      "url": "https://www.canada.ca/en/department-finance/programs/international-trade-finance-policy/canadas-response-us-tariffs/complete-list-us-products-subject-to-counter-tariffs.html"
+    },
+    {
+      "id": "gac-agreements",
+      "title": "Global Affairs trade agreements catalogue",
+      "url": "https://international.canada.ca/en/services/business/trade/agreements-negotiations/investment-agreements"
+    },
+    {
+      "id": "bis-contact",
+      "title": "CBSA Border Information Service contact page",
+      "url": "https://www.cbsa-asfc.gc.ca/contact/bis-sif-eng.html"
+    }
+  ]
+}
