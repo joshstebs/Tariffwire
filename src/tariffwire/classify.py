@@ -296,7 +296,7 @@ def research_packet(
         chapter = chapter_by_number(number)
         if chapter:
             by_chapter.setdefault(number, [])
-            if "chapter-number" not in by_chapter[number]:
+            if "named chapter number" not in by_chapter[number]:
                 by_chapter[number].append("named chapter number")
 
     candidates = [
@@ -421,10 +421,25 @@ def _finish(
     return packet
 
 
+DETERMINATION_FIELDS = (
+    "tariff_classification",
+    "duty_rate",
+    "origin_determination",
+    "value_for_duty_determination",
+    "permit_determination",
+    "sima_determination",
+    "surtax_determination",
+)
+_CANDIDATE_FORBIDDEN_KEYS = ("duty", "rate", "duty_rate", "tariff_item", "classification", "surtax", "sima")
+
+
 def _guard(packet: dict[str, Any]) -> None:
     """Fail closed if a future change starts emitting a determination."""
-    if packet["tariff_classification"] is not None or packet["duty_rate"] is not None:
-        raise RuntimeError("Refusing to emit a classification or duty rate")
+    for field in DETERMINATION_FIELDS:
+        if field not in packet:
+            raise RuntimeError(f"Packet is missing the {field} field")
+        if packet[field] is not None:
+            raise RuntimeError(f"Refusing to emit a determination in {field}")
     if packet["uncertainty"]["level"] != "high":
         raise RuntimeError("Refusing to emit a classification packet below high uncertainty")
     if packet["professional_review_required"] is not True:
@@ -432,5 +447,11 @@ def _guard(packet: dict[str, Any]) -> None:
     for candidate in packet["candidate_chapters"]:
         if candidate.get("confidence") != "not_a_classification":
             raise RuntimeError("Candidate confidence must stay not_a_classification")
-        if "duty" in candidate or "rate" in candidate:
-            raise RuntimeError("Candidate chapters cannot carry a rate")
+        if candidate.get("basis") != "official_chapter_title_overlap":
+            raise RuntimeError("Candidate basis must stay official_chapter_title_overlap")
+        for key in _CANDIDATE_FORBIDDEN_KEYS:
+            if key in candidate:
+                raise RuntimeError(f"Candidate chapters cannot carry {key}")
+    code = packet.get("user_supplied_code")
+    if code and (code.get("unverified") is not True or code.get("exists_in_stored_schedule") is not None):
+        raise RuntimeError("A user-supplied number must stay unverified")

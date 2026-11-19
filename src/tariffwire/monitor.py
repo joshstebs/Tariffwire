@@ -8,6 +8,7 @@ log in, does not call CARM, and does not decide that a duty rate changed.
 from __future__ import annotations
 
 import hashlib
+import http.client
 import json
 import re
 from datetime import datetime, timezone
@@ -54,6 +55,38 @@ def _markers(body: str) -> dict[str, list[str]]:
     return found
 
 
+_VOLATILE_RE = re.compile(
+    r"<script\b[^>]*>.*?</script\s*>|<style\b[^>]*>.*?</style\s*>|<!--.*?-->",
+    re.I | re.S,
+)
+CONTENT_HASH_BASIS = (
+    "SHA-256 of the HTML after removing <script>, <style> and comment blocks and "
+    "collapsing whitespace. Some government pages embed a per-request analytics "
+    "nonce in a script tag, so the raw-byte hash changes on every fetch."
+)
+
+
+def content_digest(body: str) -> str:
+    """Hash the page without blocks that change on every request."""
+    text = _VOLATILE_RE.sub(" ", body)
+    text = re.sub(r"\s+", " ", text).strip()
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def _failed(entry: dict[str, Any], status: int | None, error: str) -> dict[str, Any]:
+    return {
+        "id": entry["id"],
+        "url": entry["url"],
+        "ok": False,
+        "http_status": status,
+        "error": error,
+        "sha256": None,
+        "content_sha256": None,
+        "bytes": None,
+        "markers": {},
+    }
+
+
 def fetch_entry(
     entry: dict[str, Any],
     *,
@@ -73,27 +106,12 @@ def fetch_entry(
             if headers is not None:
                 content_type = headers.get("Content-Type", "")
     except HTTPError as exc:
-        return {
-            "id": entry["id"],
-            "url": entry["url"],
-            "ok": False,
-            "http_status": exc.code,
-            "error": f"HTTP {exc.code}",
-            "sha256": None,
-            "bytes": None,
-            "markers": {},
-        }
+        return _failed(entry, exc.code, f"HTTP {exc.code}")
     except URLError as exc:
-        return {
-            "id": entry["id"],
-            "url": entry["url"],
-            "ok": False,
-            "http_status": None,
-            "error": str(exc.reason),
-            "sha256": None,
-            "bytes": None,
-            "markers": {},
-        }
+        return _failed(entry, None, str(exc.reason))
+    except (TimeoutError, OSError, http.client.HTTPException) as exc:
+        # A timeout or dropped connection on one page must not abort the whole check.
+        return _failed(entry, None, f"{type(exc).__name__}: {exc}")
 
     text = raw.decode("utf-8", "replace")
     return {
@@ -106,11 +124,14 @@ def fetch_entry(
         "content_type": content_type,
         "bytes": len(raw),
         "sha256": hashlib.sha256(raw).hexdigest(),
+        "content_sha256": content_digest(text),
+        "content_hash_basis": CONTENT_HASH_BASIS,
         "markers": _markers(text),
         "error": None,
         "interpretation": (
-            "SHA-256 covers the HTTP body. A change means those bytes changed. "
-            "It does not identify a duty-rate amendment."
+            "sha256 covers the raw HTTP body; content_sha256 ignores script, style and "
+            "comment blocks. A change means the page changed. It does not identify a "
+            "duty-rate amendment."
         ),
     }
 
@@ -141,11 +162,21 @@ def run_check(
             observation["change"] = "check_failed"
         elif prior is None or not prior.get("sha256"):
             observation["change"] = "no_baseline"
+        elif prior.get("content_sha256") and observation.get("content_sha256"):
+            if prior["content_sha256"] == observation["content_sha256"]:
+                observation["change"] = "unchanged_since_baseline"
+                if prior.get("sha256") != observation.get("sha256"):
+                    observation["raw_bytes_differ_in_scripts_or_markup_only"] = True
+            else:
+                observation["change"] = "page_content_changed"
+                observation["baseline_content_sha256"] = prior["content_sha256"]
         elif prior.get("sha256") == observation.get("sha256"):
             observation["change"] = "unchanged_since_baseline"
         else:
+            # The baseline predates content hashing, so only raw bytes can be compared.
             observation["change"] = "page_bytes_changed"
             observation["baseline_sha256"] = prior.get("sha256")
+            observation["baseline_has_no_content_hash"] = True
 
     report = {
         "checked_at": moment.isoformat(),
@@ -157,7 +188,9 @@ def run_check(
         "baseline_checked_at": (baseline or {}).get("checked_at"),
         "observation_count": len(observations),
         "failure_count": sum(1 for item in observations if not item["ok"]),
-        "changed_count": sum(1 for item in observations if item["change"] == "page_bytes_changed"),
+        "changed_count": sum(
+            1 for item in observations if item["change"] in ("page_bytes_changed", "page_content_changed")
+        ),
         "observations": observations,
     }
     if write:

@@ -122,6 +122,14 @@ class TariffWireHandler(BaseHTTPRequestHandler):
 
     def do_POST(self) -> None:  # noqa: N802
         parsed = urlparse(self.path)
+        # Require a JSON content type. A cross-site page can send a "simple" POST
+        # (text/plain or form data) without a CORS preflight; application/json
+        # forces a preflight, which this server never approves. This stops other
+        # sites from triggering /api/monitor/run and overwriting data/monitor/latest.json.
+        content_type = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        if content_type != "application/json":
+            self._error(415, "Content-Type must be application/json")
+            return
         length = int(self.headers.get("Content-Length", "0") or 0)
         if length > 100_000:
             self._error(413, "Request body is too large")
